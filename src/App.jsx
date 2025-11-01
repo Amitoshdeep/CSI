@@ -8,8 +8,7 @@ function App() {
   return (
     <div
       data-scroll-container
-      className='bg-black text-white
-      min-h-[100dvh] w-full overflow-x-hidden
+      className='mainDiv
       '
     >
       <Routes>
