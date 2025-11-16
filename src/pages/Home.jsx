@@ -1,5 +1,5 @@
 import React from 'react'
-// import CircularText from "../components/reactbits/CircularText"
+import CircularText from "../components/reactbits/CircularText"
 
 function Home() {
 
@@ -13,7 +13,6 @@ function Home() {
 
       {/* Hero img */}
       <div className='hero relative px-4 z-10 pt-5'>
-
         {/* Main Banner*/}
         <div className='w-full aspect-[16/9]
         mask-[url("src/assets/layout/Imgage.png")] bg-[url("imgs/hero.png")]
@@ -34,7 +33,6 @@ function Home() {
               ) )
             }
           </div>
-
         </div>
 
           {/* Paragraph */}
@@ -51,6 +49,26 @@ function Home() {
             </p>
 
           </div>
+      </div>
+
+      <div className='starterDiv z-10 py-4 px-8'>
+
+        <div className='flex justify-between w-full'>
+
+          <div className=''>
+            <p>Random</p>
+          </div>
+
+          {/* circular text*/}
+          <div className=''>
+            <CircularText
+              text="CSI*STUDENT*CHAPTER*"
+              onHover="speedUp"
+              spinDuration={20}
+              className="custom-class"
+              />
+          </div>
+        </div>
 
       </div>
 

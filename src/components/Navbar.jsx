@@ -16,12 +16,18 @@ function Navbar() {
 
       <div className='relative w-full h-full'>
 
+        {/* blur Bar */}
+        <div
+        className='absolute w-screen bg-gray-300/10 backdrop-blur-sm h-5'>
+        </div>
+
         {/* Main Nav BAr */}
         <div
         className='absolute w-[52%] h-full
         left-[20.5%] flex items-center
-        bg-gray-300/10 rounded-2xl
+        bg-gray-300/10 rounded-b-2xl
         backdrop-blur-sm
+        shadow-sm shadow-black/10
         '>
 
           <ul className='flex items-center justify-center
