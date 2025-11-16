@@ -1,9 +1,35 @@
 @import "tailwindcss";
 
+*{
+  scrollbar-width: thin;
+}
+
+@font-face {
+  font-family: "Aldo";
+  src: url("/fonts/aldo/Aldo PC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme{
+  --font-Poppins: "Poppins",sans-serif;
+  --font-Aldo: "Aldo", sans-serif;
+}
+
 .starterDiv{
   @apply min-h-[100dvh] flex items-center justify-center text-4xl;
 }
 
 .mainDiv{
-  @apply bg-black text-white min-h-[100dvh] w-full overflow-x-hidden;
+  @apply min-h-[100dvh] w-full overflow-x-hidden;
+}
+
+/* Clip Paths */
+
+.image{
+  @apply w-[98.5%] aspect-[16/9]
+    bg-[url('src/assets/layout/Imgage.png')]
+    bg-no-repeat
+    bg-contain
+  ;
 }
