@@ -84,23 +84,26 @@ export default function Home() {
             Computer Society of India
           </motion.h1>
 
-          {/* Type js */}
+          {/* Typed JS (fixed — no layout shift) */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
             className='text-xl'
           >
-            <TypedParagraphAuto
-              strings={[
-                "The Indian computer industry is represented by the Computer Society of India. A small group of computer professionals founded it on March 6th, 1965, and it has since expanded to become the national organization that represents computer experts. It has 100,000 members, 511 student clubs, and 72 chapters spread around across India.",
-                "The Computer Society of India is a nonprofit organization that brings together professionals to discuss ideas and share opinions. The Computer Society of India is a nonprofit organization that brings together professionals to discuss ideas and exchange opinions. Members from a wide range of fields are dedicated to advancing the theory and methods of computer engineering and technology system, science and engineering, information processing, and associated arts and sciences."
-              ]}
-              typeSpeed={15}
-              backSpeed={15}
-              backDelay={2800}
-              loop={true}
-            />
+            <div className="min-h-[220px]">
+              <TypedParagraphAuto
+                key="typed-para"
+                strings={[
+                  "The Indian computer industry is represented by the Computer Society of India. A small group of computer professionals founded it on March 6th, 1965, and it has since expanded to become the national organization that represents computer experts. It has 100,000 members, 511 student clubs, and 72 chapters spread around across India.",
+                  "The Computer Society of India is a nonprofit organization that brings together professionals to discuss ideas and share opinions. The Computer Society of India is a nonprofit organization that brings together professionals to discuss ideas and exchange opinions. Members from a wide range of fields are dedicated to advancing the theory and methods of computer engineering and technology system, science and engineering, information processing, and associated arts and sciences."
+                ]}
+                typeSpeed={15}
+                backSpeed={15}
+                backDelay={2800}
+                loop={true}
+              />
+            </div>
           </motion.div>
         </motion.div>
       </div>
@@ -132,19 +135,6 @@ export default function Home() {
             <p>Random</p>
           </motion.div>
 
-          {/* CircularText (if needed) */}
-          {/* <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-          >
-            <CircularText
-              text="CSI*STUDENT*CHAPTER*"
-              onHover="speedUp"
-              spinDuration={20}
-              className="custom-class"
-            />
-          </motion.div> */}
         </div>
       </div>
 
