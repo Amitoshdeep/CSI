@@ -4,8 +4,8 @@ import React from 'react'
 function Home() {
 
   const imgLogo = [
-    {name: "chitkara", url: "/imgs/culogo.png"},
-    {name: "csi-logo", url: "/imgs/csi-logo.png"}
+    {name: "chitkara", url: "/imgs/culogo.png", loc: "https://ca.chitkara.edu.in/"},
+    {name: "csi-logo", url: "/imgs/csi-logo.png", loc: "https://csi-india.org/"}
   ]
 
   return (
@@ -24,7 +24,12 @@ function Home() {
             {
               imgLogo.map( (img, index) =>(
                 <div className='h-15 aspect-square' key={index}>
-                  <img src={img.url} alt={img.name} className='h-full w-full object-cover rounded-xl' />
+                  <img
+                  src={img.url}
+                  alt={img.name}
+                  className='h-full w-full object-cover rounded-xl cursor-pointer'
+                  onClick={()=>window.open(img.loc)}
+                  />
                 </div>
               ) )
             }
