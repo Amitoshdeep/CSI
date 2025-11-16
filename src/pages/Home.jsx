@@ -33,7 +33,7 @@ function Home() {
         </div>
 
           {/* Paragraph */}
-          <div className=' w-1/2 h-2/6 absolute bottom-20
+          <div className=' w-1/2 h-2/6 absolute bottom-20 pt-8
             flex flex-col gap-4 p-4
           '>
 
