@@ -9,10 +9,10 @@ function Home() {
   ]
 
   return (
-    <div className='relative'>
+    <div className='relative min-h-screen'>
 
       {/* Hero img */}
-      <div className='hero relative px-4 z-10 top-5'>
+      <div className='hero relative px-4 z-10 pt-5'>
 
         {/* Main Banner*/}
         <div className='w-full aspect-[16/9]
