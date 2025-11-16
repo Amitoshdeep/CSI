@@ -1,7 +1,10 @@
 import React from 'react'
 import CircularText from "../components/reactbits/CircularText"
+import ScrollVelocity from "../components/reactbits/ScrollVelocity"
 
 function Home() {
+
+  const velocity = 100;
 
   const imgLogo = [
     {name: "chitkara", url: "/imgs/culogo.png", loc: "https://ca.chitkara.edu.in/"},
@@ -51,6 +54,15 @@ function Home() {
           </div>
       </div>
 
+      {/* SCROLLER */}
+      <div className='mb-10'>
+        <ScrollVelocity
+          texts={['CSI CHITKARA', 'STUDENT CHAPTER']}
+          velocity={velocity}
+          className=""
+          />
+      </div>
+
       <div className='starterDiv z-10 py-4 px-8'>
 
         <div className='flex justify-between w-full'>
@@ -60,14 +72,14 @@ function Home() {
           </div>
 
           {/* circular text*/}
-          <div className=''>
+          {/* <div className=''>
             <CircularText
               text="CSI*STUDENT*CHAPTER*"
               onHover="speedUp"
               spinDuration={20}
               className="custom-class"
               />
-          </div>
+          </div> */}
         </div>
 
       </div>
