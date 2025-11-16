@@ -11,7 +11,7 @@ function App() {
     <div
       data-scroll-container
       className='mainDiv
-      relative font-Poppins bg-gray-300'
+      relative font-Poppins bg-gray-300 cursor-default'
       >
       <Navbar/>
       <ScrollToTop />
